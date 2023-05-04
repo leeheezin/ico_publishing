@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+    /* 스크린 최대 너비 768px 일 때 */
+    #mainLocation {
+        height: 80vh;
+    }
+    #footer {
+        height: 20vh;
+    }
+    .locacont {
+        display: block;
+    }
+    .locaMap img {
+        width: 100%;
+        height: 100%;
+    }
+    .locaInfo {
+        width: 100%;
+    }
+  }
