@@ -96,7 +96,7 @@ nav ul li a {
     justify-content: center;
     align-items: center;
 }
-
+#mMenuWrap {display: none;}
 /* mainBanner */
 .mainTit {
     position: absolute;
