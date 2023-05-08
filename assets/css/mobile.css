@@ -1,138 +1,143 @@
 @media (max-width: 1024px) {
-    /* 스크린 최대 너비 768px 일 때 */
+  /* 스크린 최대 너비 768px 일 때 */
 
-    /* mobilemenu */
-    #mMenuWrap {display: block;}
-    nav {display: none;}
-    .menu_btn{
-        text-align: right;
-        padding: 10px;
-      }
-      .menu_bg{
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,0.7);
-        position: absolute;
-        top:0;
-        display: none;
-      }
-      .sidebar_menu{
-        display: none;
-        width: 50%;
-        height: 100vh;
-        background: var(--lightGray);
-        position: absolute;
-        top:0;
-        right: -50%;
-        
-      }
-      .close_btn{
-        width: 25px;
-        height: 25px;
-        margin:10px;
-      }
-      .close_btn > a{
-        display: block;
-        width: 100%;
-        height: 100%;
-      }
-      .menu_wrap{
-        list-style: none;
-        padding: 20px 20px;   
-      }
-      .menu_wrap li a{
-        color: var(--darkFont);
-        text-decoration: none;
-      }
-      /* //mobilemenu */
-    
-    /* mainLocation */
-    #mainLocation {
-        height: 100%;
+  /* mobilemenu */
+  #mMenuWrap {display: block;}
+  nav {display: none;}
+  .menu_btn{
+      text-align: right;
+      padding: 10px;
     }
-    #footer {
-        height: 20vh;
-    }
-    .locacont {
-        display: block;
-    }
-    .locaMap img {
-        width: 100%;
-        height: 100%;
-    }
-    .locaInfo {
-        width: 100%;
-    }
-    /* mainLink */
-    #mainLink, .mainLinkBg {
+    .menu_bg{
+      width: 100%;
       height: 100%;
+      background: rgba(0,0,0,0.7);
+      position: absolute;
+      top:0;
+      display: none;
     }
-    .linkBox ul {
-      flex-wrap: wrap;
+    .sidebar_menu{
+      display: none;
+      width: 50%;
+      height: 100vh;
+      background: var(--lightGray);
+      position: absolute;
+      top:0;
+      right: -50%;
+      
     }
-    .linkBox ul li {
-      margin: 5vw 0;
-      width: 39vw;
-      height: 39vw;
+    .close_btn{
+      width: 25px;
+      height: 25px;
+      margin:10px;
     }
-    .linkBox ul li a {
+    .close_btn > a{
+      display: block;
       width: 100%;
       height: 100%;
     }
-    .linkBox ul li a img {
-      width: 16vw;
-      padding-top: 5vw;
+    .menu_wrap{
+      list-style: none;
     }
-    .linkBox ul li:first-child a img, .linkBox ul li:last-child a img {
-      padding-top: 9vw;
+    .menu_wrap li {
+      padding: 2vw 5vw;
+      font-size: 3.5vw;
     }
-    .linkBox ul li a span {
-      font-size: 3.3vw;
+    .menu_wrap li a{
+      display: block;
     }
-    .linkBox ul li:nth-child(odd) a, .linkBox ul li:nth-child(even) a {
-      left: 0;
-      bottom: 0;
-      top: 0; 
+    .menu_wrap li:hover, .menu_wrap li:active {
+      background: var(--light);
     }
-    .linkBox li .linkImg {
-      height: 39vw;
-    }
-
-    .bgGray::after, .bgWhite::after {
-      display: none;
-    }
-    /* mainNotice */
-    #mainNotice { height: 100%; }
-    .noticeInner { 
-      display: block; 
-      padding: 5vw 0;}
-    .noticeBox { display: block; }
-    .noticeTit p { display: none; }
-    .boxList { 
-      width: 100%; 
-      height: 25vw; 
-    }
-    .boxList em {
-      font-size: 2.3vw;
-    }
-    .boxList strong  {
-      font-size: 2.1vw;
-    }
-    .boxList p {
-      font-size: 2vw;
-    }
-    .boxList span {
-      font-size: 1.9vw;
-    }
-    /* mainLocation */
-    .contact {
-      padding-top: 3vw;
-    }
-    .consult { justify-content: flex-start;}
-    .consult a {padding-right: 3vw;}
-    /* footer */
-    .footLogo {display: none;}
+    /* //mobilemenu */
+  
+  /* mainLocation */
+  #mainLocation {
+      height: 100%;
   }
-  @media (max-width: 768px) {
-
+  #footer {
+      height: 20vh;
   }
+  .locacont {
+      display: block;
+  }
+  .locaMap img {
+      width: 100%;
+      height: 100%;
+  }
+  .locaInfo {
+      width: 100%;
+  }
+  /* mainLink */
+  #mainLink, .mainLinkBg {
+    height: 100%;
+  }
+  .linkBox ul {
+    flex-wrap: wrap;
+  }
+  .linkBox ul li {
+    margin: 5vw 0;
+    width: 39vw;
+    height: 39vw;
+  }
+  .linkBox ul li a {
+    width: 100%;
+    height: 100%;
+  }
+  .linkBox ul li a img {
+    width: 16vw;
+    padding-top: 5vw;
+  }
+  .linkBox ul li:first-child a img, .linkBox ul li:last-child a img {
+    padding-top: 9vw;
+  }
+  .linkBox ul li a span {
+    font-size: 3.3vw;
+  }
+  .linkBox ul li:nth-child(odd) a, .linkBox ul li:nth-child(even) a {
+    left: 0;
+    bottom: 0;
+    top: 0; 
+  }
+  .linkBox li .linkImg {
+    height: 39vw;
+  }
+
+  .bgGray::after, .bgWhite::after {
+    display: none;
+  }
+  /* mainNotice */
+  #mainNotice { height: 100%; }
+  .noticeInner { 
+    display: block; 
+    padding: 5vw 0;}
+  .noticeBox { display: block; }
+  .noticeTit p { display: none; }
+  .boxList { 
+    width: 100%; 
+    height: 25vw; 
+  }
+  .boxList em {
+    font-size: 2.3vw;
+  }
+  .boxList strong  {
+    font-size: 2.1vw;
+  }
+  .boxList p {
+    font-size: 2vw;
+  }
+  .boxList span {
+    font-size: 1.9vw;
+  }
+  /* mainLocation */
+  .contact {
+    padding-top: 3vw;
+  }
+  .consult { justify-content: flex-start;}
+  .consult a {padding-right: 3vw;}
+  /* footer */
+  .footLogo {display: none;}
+}
+@media (max-width: 768px) {
+
+}

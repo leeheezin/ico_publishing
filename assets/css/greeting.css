@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* layout */
+#wrapper {}
+main {}
+#subBanner { width: 100%; height: 40vh; background: url('../img/sub_banner.png') no-repeat center/cover;}
+#greeting { }
+.subInner { max-width: 1700px; height: 100%; width: 80%; margin: auto;}
+
+/* subBanner */
+.bannerInner {
+    color: var(--light);
+    text-align: right;
+    padding-top: 129px;
+}
+.subInner h2 {
+    font-weight: 700;
+    font-size: 2.7rem;
+}
+/* greeting */
+.greetInner {
+    display: flex;
+    padding-top: 4vw;
+}
+.widgetBox { width: 20%;}
+.widgetBox h3 {}
+.widgetBox ul {}
+.widgetBox ul li{}
+.widgetBox ul li a {}
+.pageBox { width: 80%; }
+.pageBox .pageCont {
+    display: none;
+}
