@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     /* 스크린 최대 너비 768px 일 때 */
 
     /* mobilemenu */
@@ -46,8 +46,9 @@
       }
       /* //mobilemenu */
     
+    /* mainLocation */
     #mainLocation {
-        height: 80vh;
+        height: 100%;
     }
     #footer {
         height: 20vh;
@@ -62,5 +63,76 @@
     .locaInfo {
         width: 100%;
     }
+    /* mainLink */
+    #mainLink, .mainLinkBg {
+      height: 100%;
+    }
+    .linkBox ul {
+      flex-wrap: wrap;
+    }
+    .linkBox ul li {
+      margin: 5vw 0;
+      width: 39vw;
+      height: 39vw;
+    }
+    .linkBox ul li a {
+      width: 100%;
+      height: 100%;
+    }
+    .linkBox ul li a img {
+      width: 16vw;
+      padding-top: 5vw;
+    }
+    .linkBox ul li:first-child a img, .linkBox ul li:last-child a img {
+      padding-top: 9vw;
+    }
+    .linkBox ul li a span {
+      font-size: 3.3vw;
+    }
+    .linkBox ul li:nth-child(odd) a, .linkBox ul li:nth-child(even) a {
+      left: 0;
+      bottom: 0;
+      top: 0; 
+    }
+    .linkBox li .linkImg {
+      height: 39vw;
+    }
+
+    .bgGray::after, .bgWhite::after {
+      display: none;
+    }
+    /* mainNotice */
+    #mainNotice { height: 100%; }
+    .noticeInner { 
+      display: block; 
+      padding: 5vw 0;}
+    .noticeBox { display: block; }
+    .noticeTit p { display: none; }
+    .boxList { 
+      width: 100%; 
+      height: 25vw; 
+    }
+    .boxList em {
+      font-size: 2.3vw;
+    }
+    .boxList strong  {
+      font-size: 2.1vw;
+    }
+    .boxList p {
+      font-size: 2vw;
+    }
+    .boxList span {
+      font-size: 1.9vw;
+    }
+    /* mainLocation */
+    .contact {
+      padding-top: 3vw;
+    }
+    .consult { justify-content: flex-start;}
+    .consult a {padding-right: 3vw;}
+    /* footer */
+    .footLogo {display: none;}
+  }
+  @media (max-width: 768px) {
 
   }
