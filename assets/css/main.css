@@ -7,6 +7,8 @@
     --point: #3974CC;
     --icon: #0C2286;
     --em: #CC394B;
+    --border: #0C2286;
+    --fontBg: #EDF3FB;
 }
 
 /* layout */
@@ -17,7 +19,7 @@ main {}
 #mainLink {width: 100%; height: 100vh;}
 #mainNotice {width: 100%; height: 100vh;}
 #mainLocation {width: 100%; height: 100vh; background: url('../img/main_sec3.png') no-repeat center/cover;}
-#footer { width: 100%; height: 254px; border-top: 1px solid var(--darkFont)}
+#footer { width: 100%; height: 243px; border-top: 1px solid var(--darkFont)}
 
 .mainInner {
   width: 90%;

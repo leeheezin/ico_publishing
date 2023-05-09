@@ -141,9 +141,9 @@
         <footer id="footer">
             <div class="footInner">
                 <div class="footInfo">
-                    <span>상호:중소기업인증원  |  대표:</span>
+                    <span>상호: (주)중소기업인증원  |  대표: 안육봉</span>
                     <span>주소: 서울시 구로구 디지털로33길 28, 우림이비지센터 1302호</span>
-                    <span>Tel: 1234-5678  |  Fax: 12-3456-7890  |  E-mail: test@naver.com</span>
+                    <span>Tel: 1577-2117  |  Fax: 02-6455-4301 |  E-mail: bck99@naver.com</span>
                     <span>Copyright © 중소기업인증원. all right resrved.</span>
                 </div>
                 <div class="footLogo"></div>
@@ -169,7 +169,7 @@
         document.querySelector('.widgetTit').innerHTML = tit.join('')
         
 
-        const widgetTit = document.querySelectorAll('.widgetTit li a');
+        const widgetTit = document.querySelectorAll('.widgetTit li');
         const pageCont = document.querySelectorAll('.pageCont');
 
         pageCont[0].style.display = 'block';
@@ -183,9 +183,12 @@
             if (i === j) {
                 pageCont[j].style.display = 'block';
                 widgetTit[j].style.fontWeight = 700;
+                widgetTit[j].style.backgroundColor = 'var(--fontBg)';
             } else {
                 pageCont[j].style.display = 'none';
                 widgetTit[j].style.fontWeight = 400;
+                widgetTit[j].style.backgroundColor = 'transparent';
+
             }
             }
         });

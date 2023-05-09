@@ -22,10 +22,18 @@ main {}
     display: flex;
     padding-top: 4vw;
 }
-.widgetBox { width: 20%;}
-.widgetBox h3 {}
+.widgetBox { width: 20%; padding-right: 3vw;}
+.widgetBox h3 {
+    font-size: 1.3vw;
+    padding: 5%;
+    font-weight: 700;
+}
 .widgetBox ul {}
-.widgetBox ul li{}
+.widgetBox ul li{
+    border-bottom: 1px solid var(--darkFont);
+    padding: 4% 5%;
+}
+.widgetBox ul li:first-child {border-top: 3px solid var(--border); }
 .widgetBox ul li a {}
 .pageBox { width: 80%; }
 .pageBox .pageCont {
