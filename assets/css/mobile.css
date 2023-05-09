@@ -17,7 +17,6 @@
       display: none;
     }
     .sidebar_menu{
-      display: none;
       width: 50%;
       height: 100vh;
       background: var(--lightGray);
@@ -139,5 +138,6 @@
   .footLogo {display: none;}
 }
 @media (max-width: 768px) {
-
+  .mainTxt span { font-size: 2rem;}
+  .subTit h3 {font-size: 2rem;}
 }
