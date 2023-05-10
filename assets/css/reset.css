@@ -1,7 +1,6 @@
 @charset "utf-8";
 
 body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,table,th,td,tr,textarea,button,form,figure,figcaption {margin:0; padding:0;}
-a { color: #333333; text-decoration: none;}
 
 /* font*/
 body, input, textarea, select, button, table { font-family: 'Noto Sans KR', sans-serif; }
@@ -11,6 +10,12 @@ h1,h2,h3,h4,h5,h6 { font-weight: normal; }
 
 /* style */
 ul, li, ol {list-style: none;}
+a { text-decoration: none; color: var(--main);}
+button{ background: transparent ; border:none; box-shadow:none; border-radius:0; padding:0; overflow:visible; cursor:pointer; }
+iframe {pointer-events: none;}
+span {display: block;}
+  
+
 
 /* IR */
 .ir_pm {display:block; overflow:hidden; font-size:0; line-height:0; text-indent:-9999px;} /* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */

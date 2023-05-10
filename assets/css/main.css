@@ -3,18 +3,20 @@
     --main: #333333;
     --light: #fff;
     --lightGray: #F7F7F7;
-    --darkFont: #999999;
+    --darkFont: #D1D1D1;
     --point: #3974CC;
     --icon: #0C2286;
     --em: #CC394B;
     --border: #0C2286;
     --fontBg: #EDF3FB;
+    --hover: rgba(255, 168, 67, 0.81);
+    --header: #3974CC;
 }
 
 /* layout */
 
 #wrapper {}
-header { top: 0; position: fixed; width: 100%; height: 80px; z-index: 10000; background: rgb(0,0,0,0.4);}
+header { top: 0; position: fixed; width: 100%; height: 80px; z-index: 10000; background: var(--header);}
 main {}
 #mainBanner { position: relative; width: 100%; height: 100vh;}
 #mainLink {width: 100%; height: 100vh;}
@@ -68,6 +70,7 @@ h1.headLogo a {
     display: block;
     width: 100%;
     height: 100%;
+    padding-top: 7%;
 }
 h1.headLogo a img {
     width: 100%;
@@ -75,23 +78,28 @@ h1.headLogo a img {
 }
 nav {
     margin: 0 auto;
-    width: 60%;
+    width: 100%;
     height: 80px;
+    max-width: 1024px;
 }
-nav ul { 
+header:hover > .subMenuWrap{
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+nav .mainMenu { 
     display: flex; 
     justify-content: space-between;
     align-items: center;
     height: 100%;
 }
-nav ul li {
+nav .mainMenu .menuList {
     width: 20%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-nav ul li a { 
+nav .mainMenu .menuList .menu { 
     display: block;
     color: var(--light); 
     text-align: center;
@@ -101,6 +109,34 @@ nav ul li a {
     justify-content: center;
     align-items: center;
 }
+  .subMenuWrap {
+    display: none;
+    width: 100%;
+    height: 396px;
+    position: absolute;
+    top: 80px;
+    z-index: 2;
+    background: var(--light);
+  }
+  .subMenuBox {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .subMenuWrap .subMenu {
+    border-left: 1px solid var(--darkFont);
+    padding: 3%;
+  }
+  .subMenuWrap .subMenu li a:hover {
+    font-weight: 700;
+    color: var(--header);
+  }
+  .subMenuWrap .subMenu li a {
+    display: block;
+    line-height: 2vw;
+  }
 #mMenuWrap {display: none;}
 /* mainBanner */
 .mainTit {
@@ -144,6 +180,9 @@ swiper-slide img {
     width: 100%;
     height: 100vh;
   }
+  .swiper-pagination-clickable .swiper-pagination-bullet {
+    background-color: white !important;
+  }
 /* mainLink */
   .mainLinkBg {
     position: relative;
@@ -163,21 +202,44 @@ swiper-slide img {
     width: 16vw;
   }
   .linkBox ul li a {
+    position: absolute;
     display: block;
     width: 13vw;
     height: 12vw;
     text-align: center;
   }
+  .linkBox ul li a:hover {
+    width: 100%;
+    height: 25vw;
+    transition: all 0.5s;
+  }
+  .linkBox ul li a:hover > button {
+    display: block;
+  }
+  .linkBox ul li a button {
+    display: none;
+    color: var(--light);
+    margin: 45% auto;
+    border-radius: 30px;
+    padding: 3% 7%;
+    border: 1px solid var(--light);
+  }
+  .linkBox ul li:nth-child(even) a:hover {
+    left: 0;
+    bottom: 21.9%;
+  }
+  .linkBox ul li:nth-child(odd) a:hover {
+    top: 0;
+    left: 0;
+  }
   .linkBox ul li:first-child a img, .linkBox ul li:last-child a img {
     padding-top: 2.1vw;
   }
   .linkBox ul li:nth-child(odd) a {
-    position: absolute;
     top: -13%;
     left: 9%;
   }
   .linkBox ul li:nth-child(even) a {
-    position: absolute;
     bottom: 12%;
     left: 9%;
   }
@@ -285,6 +347,9 @@ swiper-slide img {
     background: var(--lightGray);
     margin-top: 10px;
   }
+  .boxList:hover {
+    background-color: var(--hover);
+  }
   .boxInner {
     padding: 1vw 2vw;
   } 
@@ -341,7 +406,7 @@ swiper-slide img {
   .locaTit h3 {
     color: var(--light);
     text-align: center;
-    padding-bottom: 1.5vw;
+    padding-bottom: 2vw;
   }
   .locaInner {}
   .locaMap {
@@ -384,7 +449,7 @@ swiper-slide img {
   }
   .iconTxt {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
     padding: 0.3vw;

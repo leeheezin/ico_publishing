@@ -34,7 +34,7 @@ main {}
     padding: 4% 5%;
 }
 .widgetBox ul li:first-child {border-top: 3px solid var(--border); }
-.widgetBox ul li a {}
+.widgetBox ul li a {display: block;}
 .pageBox { width: 80%; }
 .pageBox .pageCont {
     display: none;

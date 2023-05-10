@@ -4,6 +4,7 @@
   /* mobilemenu */
   #mMenuWrap {display: block;}
   nav {display: none;}
+  .subMenuWrap {display: none;}
   .menu_btn{
       text-align: right;
       padding: 10px;
@@ -48,15 +49,23 @@
     .menu_wrap li:hover, .menu_wrap li:active {
       background: var(--light);
     }
+    header:hover > .subMenuWrap {
+      display: none;
+    }
     /* //mobilemenu */
   
   /* mainLocation */
   #mainLocation {
       height: 100%;
   }
-  #footer {
-      height: 20vh;
+  .contact {
+    padding-top: 3vw;
   }
+  .iconTxt { padding: 1vw;}
+  .consult { justify-content: flex-start;}
+  .consult a {padding-right: 3vw;}
+
+  
   .locacont {
       display: block;
   }
@@ -128,16 +137,25 @@
   .boxList span {
     font-size: 1.9vw;
   }
-  /* mainLocation */
-  .contact {
-    padding-top: 3vw;
-  }
-  .consult { justify-content: flex-start;}
-  .consult a {padding-right: 3vw;}
+
   /* footer */
+  #footer {
+    height: 20vh;
+  }
   .footLogo {display: none;}
+
+
+  /* greeting.html */
+    .greetInner {flex-wrap: wrap-reverse;}
+    .widgetBox {
+      width: 100%;
+      padding-right: 0;
+    }
 }
+
+
 @media (max-width: 768px) {
   .mainTxt span { font-size: 2rem;}
   .subTit h3 {font-size: 2rem;}
 }
+
