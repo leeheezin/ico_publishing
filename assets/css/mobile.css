@@ -41,7 +41,7 @@
     }
     .menu_wrap li {
       padding: 2vw 5vw;
-      font-size: 3.5vw;
+      font-size: 3vw;
     }
     .menu_wrap li a{
       display: block;
@@ -69,6 +69,7 @@
   .locacont {
       display: block;
   }
+  .locaMap { width: 100%; }
   .locaMap img {
       width: 100%;
       height: 100%;
@@ -119,7 +120,7 @@
   .noticeInner { 
     display: block; 
     padding: 5vw 0;}
-  .noticeBox { display: block; }
+  .noticeBox { display: block; width: 100%;}
   .noticeTit p { display: none; }
   .boxList { 
     width: 100%; 
@@ -137,6 +138,7 @@
   .boxList span {
     font-size: 1.9vw;
   }
+  .boxLeft , .boxRight {width: 100%;}
 
   /* footer */
   #footer {
@@ -145,12 +147,7 @@
   .footLogo {display: none;}
 
 
-  /* greeting.html */
-    .greetInner {flex-wrap: wrap-reverse;}
-    .widgetBox {
-      width: 100%;
-      padding-right: 0;
-    }
+  
 }
 
 

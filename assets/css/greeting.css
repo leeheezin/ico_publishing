@@ -5,7 +5,7 @@
 main {}
 #subBanner { width: 100%; height: 40vh; background: url('../img/sub_banner.png') no-repeat center/cover;}
 #greeting { }
-.subInner { max-width: 1700px; height: 100%; width: 80%; margin: auto;}
+.subInner { max-width: 1200px; height: 100%; width: 80%; margin: auto;}
 
 /* subBanner */
 .bannerInner {
@@ -20,7 +20,7 @@ main {}
 /* greeting */
 .greetInner {
     display: flex;
-    padding-top: 4vw;
+    padding :2vw 0 7vw;
 }
 .widgetBox { width: 20%; padding-right: 3vw;}
 .widgetBox h3 {
@@ -38,4 +38,47 @@ main {}
 .pageBox { width: 80%; }
 .pageBox .pageCont {
     display: none;
+}
+.pageInner {display: flex; align-items: center;}
+.pageLeft {width: 70%; padding-right: 3vw;}
+.pageRight {width: 30%;}
+
+.pageLeft em {
+    font-size: 1.3rem;
+    line-height: 3rem;
+    color: var(--point);
+}
+.pageCont img {width: 100%;}
+.pageCont span {
+    font-weight: 700;
+    font-size: 2rem;
+    padding-bottom: 2vw;
+}
+.certificWrap {}
+.profileImg {
+    width: 30%;
+    margin: auto;
+}
+.profileTxt p {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+
+@media (max-width: 1024px) {
+    /* greeting.html */
+    .greetInner {flex-wrap: wrap-reverse;}
+    .pageBox , .widgetBox {
+    width: 100%;
+    padding: 5vw 0;
+    }
+    .widgetBox h3 {
+        font-size: 3vw;
+        padding: 3%;
+        font-weight: 700;
+        text-align: center;
+    }
+    .widgetBox ul li {
+        padding: 3% 4%;
+    }
 }

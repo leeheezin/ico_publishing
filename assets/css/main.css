@@ -26,7 +26,7 @@ main {}
 
 .mainInner {
   width: 90%;
-  max-width: 1700px;
+  max-width: 1320px;
   margin: auto;
   padding-top: 5vw;
 
@@ -60,7 +60,7 @@ main {}
      display: flex; 
      justify-content: space-between;
      align-items: center;
-     max-width: 1700px;
+     max-width: 1320px;
      height: 80px;
 }
 h1.headLogo {
@@ -122,12 +122,15 @@ nav .mainMenu .menuList .menu {
     display: flex;
     justify-content: center;
     height: 100%;
-    max-width: 1024px;
     margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+    padding-left: 11vw;
   }
   .subMenuWrap .subMenu {
     border-left: 1px solid var(--darkFont);
-    padding: 3%;
+    padding: 30px 10px;
+    width: 20%;
   }
   .subMenuWrap .subMenu li a:hover {
     font-weight: 700;
@@ -199,7 +202,7 @@ swiper-slide img {
   }
   .linkBox ul li {
     position: relative;
-    width: 16vw;
+    width: 15vw;
   }
   .linkBox ul li a {
     position: absolute;
@@ -237,11 +240,11 @@ swiper-slide img {
   }
   .linkBox ul li:nth-child(odd) a {
     top: -13%;
-    left: 9%;
+    left: 7%;
   }
   .linkBox ul li:nth-child(even) a {
     bottom: 12%;
-    left: 9%;
+    left: 7%;
   }
   .linkBox ul li:nth-child(1) a {
     background: linear-gradient(180deg, rgba(255, 106, 106, 0.83) -9.92%, #FF6A6A 49.79%);
@@ -325,7 +328,7 @@ swiper-slide img {
   .noticeInner {
     display: flex;
   }
-  .noticeTit { width: 30vw;}
+  .noticeTit { width: 23%;}
   .noticeTit p {
     padding-top: 1vw;
     font-size: 1.8rem;
@@ -335,18 +338,19 @@ swiper-slide img {
     color: var(--darkFont);
   }
   .noticeBox { 
-    width: 100%; 
+    width: 77%; 
     padding-top: 3vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
   .boxList {
-    width: 33vw;
+    width: 95%;
     height: 36vh;
     background: var(--lightGray);
     margin-top: 10px;
   }
+  .boxLeft , .boxRight {width: 50%;}
   .boxList:hover {
     background-color: var(--hover);
   }
@@ -410,6 +414,7 @@ swiper-slide img {
   }
   .locaInner {}
   .locaMap {
+    width: 64%;
   }
   .kakaoMap {
     width: 100%;
@@ -426,14 +431,14 @@ swiper-slide img {
     padding-top: 25px;
   }
   .locaMap img {
-    width: 49vw;
+    width: 100%;
     height: 30vw;
   }
   .locaInfo {
-    width: 26vw;
+    width: 30%;
     color: var(--light);
     font-weight: 700;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 
   }
   .locaIcon {
@@ -449,10 +454,10 @@ swiper-slide img {
   }
   .iconTxt {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    padding: 0.3vw;
+    padding: 9px;
   }
   .consult {
     display: flex;
@@ -479,7 +484,7 @@ swiper-slide img {
   /* footer */
   .footInner {
     width: 90%;
-    max-width: 1700px;
+    max-width: 1320px;
     height: 100%;
     margin: 0 auto;
     display: flex;
