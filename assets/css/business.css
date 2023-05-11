@@ -1,0 +1,94 @@
+@charset "urf8";
+
+/* width */
+.table_wrap::-webkit-scrollbar { width: 20px; height:10px; }
+
+/* Track */
+.table_wrap::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.table_wrap::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.table_wrap::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+.page-content .table_wrap {   overflow-x: auto;}
+.page-content div[class^='con'] h4 + div,
+.page-content div[class^='con'] h4 + p { padding:0 0 10px;}
+
+.page-content {  word-break: break-all; line-height:1.6; word-wrap: break-word; margin-bottom:50px; }    
+ .page-content .clear:after { content:''; display:block; clear:both;}
+ .root .con2 ul, .root ol { padding:0; display: flex; flex-wrap: wrap; justify-content: space-between;}
+ .root .con3 ul {display: flex; justify-content: space-between;}
+ .root .con3 ul li {width: 49%; border: 1px solid var(--darkFont);}
+ .root .con2 ul li, .root.con3 ul li, .root ol li { list-style:none; padding: 0 0 12px; margin: 0 0 2%; width: 49%; border: 1px solid var(--darkFont);}        
+ .research .clear {display: flex; border: 1px solid var(--darkFont); width: 100%;}
+ .research .clear ul {width: 50%;}
+ .page-content li p { padding:0 0 5px; font-weight:500;  font-size:16px}
+ .page-content li span { display:block; padding: 0 0 2px;}
+.page-content  b, .page-content strong { font-weight:500;}
+.page-content em { font-style: normal; font-weight:400;}
+.h5_wrap h5 {font-size: 1.3rem;}
+.page-content span > b { color:#f59704;}
+    
+ .page-content h4 {  position: relative; padding: 0 0 20px; margin:0;  color: #2e3192; font-size: 21px; font-weight: 700; text-indent: 22px;}
+ .page-content h4:after { content: ''; position: absolute; left: 0; top: 7px; display: block; width: 11px; height: 11px; background: #2e3192; transform: rotate(45deg)}
+
+    
+    
+ .page-content div[class*='con'] { width: 100%; position:relative; padding: 0 0 50px;}    
+ .page-content dt { color:#b30000;}
+ .page-content  table { width:100%;}
+ .page-content  table th,
+ .page-content  table td { padding:10px 5px; border:1px solid #ddd; text-align: center;}     
+ .page-content  table th { text-align:center; font-weight: 500; }
+ .page-content  table td { font-family: dotum,sans-serif; font-size:12px; }    
+ .page-content  table thead th { background: #3498db; color:#fff; }
+ .page-content  table tbody th { background: #f5f5f5;}
+
+.page-content div.bg_gray { padding:10px !important; margin:0 0 10px; background:#f5f5f5;}
+
+
+.page-content div[class*='con'] table td:last-of-type { text-align: left;} 
+
+
+
+.page-content ul.square li dl { display:flex; flex-wrap: wrap; margin:0; }
+.page-content ul.square li dt { width:120px; font-weight:500; color:#cd5151; }
+.page-content ul.square li dd { padding:0 0 5px; width:calc(100% - 120px);}
+
+
+    
+    @media (max-width:480px) {
+    .page-content div[class*='con'] table td:nth-of-type(1){ width:60px;}
+    .page-content div[class*='con'] table td:nth-of-type(2){ width:60px;}    
+    }
+    @media (max-width:400px) {
+    .page-content div[class*='con'] table td:nth-of-type(1){ width:50px;}
+    .page-content div[class*='con'] table td:nth-of-type(2){ width:50px;}    
+    }
+    
+    
+    .page-content .con1 { }
+    .page-content .con1 li span em { font-weight:500; color:#ff0000; }    
+    .page-content div.con1 table td:last-of-type { text-align: center;} 
+    
+
+    .page-content .con2 {}
+    .page-content .con2 ol { width:100%; text-align:center; }
+    .page-content .con2 ol p { margin: 0 0 20px; font-size:20px; color:#515151; font-weight:600;}
+    .page-content .con2 ol li { position:relative; padding:10px 10px;  margin: 0 0 30px;  border-radius:10px;  font-size:16px; font-weight:400; }
+    .page-content .con2 ol li.li1 { background-color:#ededed; }
+    .page-content .con2 ol li.li2 { background-color:#e2e2e2;}
+    .page-content .con2 ol li.li3 { background-color:#d3d3d3;}
+    .page-content .con2 ol li.li4 { background-color:#bbbbbb;}
+    .page-content .con2 ol li.li5 { background-color:#a9a9a9;}
+    .page-content .con2 ol li.li6 { background-color:#e24125; color:#fff;}
+    .page-content .con2 ol li:not(:last-of-type):after { content:''; display:block; position:absolute; left:50%;  z-index:2;  transform:translateX(-50%); width:32px; height:32px; background:url('/page/img/ico_arrow1.png') no-repeat center top;  border:1px solid #ddd; border-radius: 50%; }

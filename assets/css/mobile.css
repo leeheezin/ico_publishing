@@ -53,7 +53,9 @@
       display: none;
     }
     /* //mobilemenu */
-  
+    .subTit span {
+      font-size: 2vw;
+    }
   /* mainLocation */
   #mainLocation {
       height: 100%;

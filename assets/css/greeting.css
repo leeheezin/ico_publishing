@@ -7,6 +7,9 @@ main {}
 #greeting { }
 .subInner { max-width: 1200px; height: 100%; width: 80%; margin: auto;}
 
+.list-wrap .list-container { overflow:hidden; margin-right:-15px; margin-bottom:0px; }
+	.list-wrap .list-row { float:left; width:33.33%; }
+	.list-wrap .list-item { margin-right:15px; margin-bottom:30px; }
 /* subBanner */
 .bannerInner {
     color: var(--light);
@@ -49,12 +52,22 @@ main {}
     color: var(--point);
 }
 .pageCont img {width: 100%;}
-.pageCont span {
+.pageCont h3 {
     font-weight: 700;
     font-size: 2rem;
     padding-bottom: 2vw;
 }
-.certificWrap {}
+.certificWrap {
+    overflow: hidden;
+}
+.certificWrap li {
+    float: left;
+    width: 33%;
+}
+.certific {
+    float: left;
+    width: 33%;
+}
 .profileImg {
     width: 30%;
     margin: auto;
@@ -63,8 +76,28 @@ main {}
     font-size: 1.3rem;
     font-weight: 700;
 }
-
-
+/* location */
+.greetingMapCont {display: block;}
+.greetingMap {width: 100%;}
+.greetingMap img {height: 21vw;}
+.greetingMapCont .locaInfo {
+    width: 100%;
+    color: var(--main);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 2vw 0;
+    border: 1px solid var(--darkFont)
+}
+.greetingMapCont .locaInfo em {
+    padding: 1% 7%;
+    font-weight: 700;
+    border-right: 1px solid var(--darkFont);
+}
+.greetingMapCont .locaInfo p {padding: 1% 2%;}
+.address , .inquiry  {
+    display: flex;
+    border-bottom: 1px solid var(--darkFont);
+}
 @media (max-width: 1024px) {
     /* greeting.html */
     .greetInner {flex-wrap: wrap-reverse;}
