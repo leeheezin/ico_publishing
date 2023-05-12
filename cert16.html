@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<!--위험성(RISK) 평가-->
+
+<link rel="stylesheet" href="/page/cert_style.css";>
+
+<style>
+    
+    .page-content   {}
+    .page-content .con3 p {font-weight: 700;}
+    .page-content .con2 ul > p { padding: 0 0 10px;  font-size: 16px;  font-weight: 700; color:#333;}
+    .page-content .con3 table {border-collapse: collapse; margin-bottom: 50px;}
+    .page-content .con3 .last {margin-bottom: 0;}
+    .page-content .con3 table td { text-align: left;  }
+    .page-content .con3 table td:first-of-type { max-width:400px;}
+    .page-content .con3 table th  {  font-weight: 700;}
+    .page-content .img { padding:20px 0 0; text-align: center; }
+    .page-content .con3 table tbody th { background: #f5f5f5; font-weight: 700;}
+
+    .blue {background: #e9f2ff}
+    .orange {background: #fff4e5}
+    .red {background: #ffd8d8}
+
+    .page-content table th .slash {text-align: left; }
+    .page-content table th .slash span {text-align: right;}
+
+    .page-content .con3 .center td {text-align: center;}
+    .page-content .con3 table .center {text-align: center;}
+    .slash {
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="0" x2="100%" y2="100%" stroke="white" /></svg>');
+}
+    
+</style>
+
+
+<div class="page-content">
+    
+    <div class="con3">
+        <h4>위험성(RISK) 평가</h4>
+        <ul>        
+            <p>1. 목적</p>
+            <p>2. 적용범위</p>
+            <p>3. 용어의 정의</p>
+            <p>4. 책임과 권한</p>    
+            <p>5. 업무절차</p>
+            <li>
+                <p>5.1 단위작업 위험성 평가</p>
+                <div>
+                    1)정기위험성 평가
+                </div>                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>위험요인 도출 내용</th>
+                            <th>주기</th>
+                        </tr>
+                    </thead>
+                        <tr>
+                            <th rowspan="3" class="center">생산/비생산부분</th>
+                            <td>- 8가지 측면 위험요인도출</td>
+                            <td rowspan="3" class="center">1회 이상/년</td>
+                        </tr>
+                        <tr>
+                            <!-- <td rowspan="3">생산/비생산부분</td> -->
+                            <td>▷ 안전 4분야 : 기계적, 전기적,작업특성,작업환경</td>
+                            <!-- <td rowspan="3">1회 이상/년</td> -->
+                        </tr>
+                        <tr>
+                            <!-- <td rowspan="3">생산/비생산부분</td> -->
+                            <td >▷ 보건 4분야 : 화학(물질)적,물리적,인간공학적,생물학적</td>
+                            <!-- <td rowspan="3">1회 이상/년</td> -->
+                        </tr>
+                </table>
+                <div>
+                    2)위험성평가표 기준 및 계산
+                </div>                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>* 발생빈도와 위험강도 기준표에 의한 위험도 산출식</th>                            
+                        </tr>
+                    </thead>
+                        <tr>
+                            <td class="center">[위험도 = 발생빈도 x 발생강도 → 위험도 결정]</td>
+                        </tr>                                           
+                </table>
+                
+                <table class="center">
+                    <thead>
+                        <tr>
+                            <th>발생빈도</th>                            
+                            <th>판정기준</th>                            
+                            <th>비고</th>                            
+                        </tr>
+                    </thead>
+                    <tbody >
+                        <tr >
+                            <td>1(거의없음)</td>
+                            <td>약 1회 /  100년 초과시</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>2(낮음)</td>
+                            <td>1회/ 50년 초과 ∼ 100년 이하시</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>3(있음)</td>
+                            <td>1회/ 10년 초과 ∼ 50년 이하시</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>4(높음)</td>
+                            <td>1회/ 1년 초과 ∼ 10년 이하시</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>5(빈번함)</td>
+                            <td>1회 / 1년 이하시</td>
+                            <td></td>
+                        </tr> 
+                    </tbody>                      
+                </table>
+                ▣ 발생빈도 보정계수 산정기준
+                <table>
+                    <thead>
+                        <tr>
+                            <th>보정계수</th>                            
+                            <th>판정기준</th>                            
+                            <th>비고</th>                            
+                        </tr>
+                    </thead>
+                        <tr>
+                            <td class="center">+</td>
+                            <td>해당 재해발생 빈도 증가 예상</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="center">0</td>
+                            <td>해당 재해발생 빈도 기준 상황 유지 예상</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="center">-</td>
+                            <td>해당 재해발생 빈도 감소 예상</td>
+                            <td></td>
+                        </tr>                          
+                </table>
+                (2) 발생강도(중대성)
+                <table class="center">
+                    <thead>
+                        <tr>
+                            <th>발생강도</th>                            
+                            <th>손실정도</th>                            
+                            <th>근골격계</th>                            
+                            <th>작업환경</th>                            
+                        </tr>
+                    </thead>
+                        <tr>
+                            <td rowspan="2">4(중대재해)</td>
+                            <td>인적: 사망, 6주 이상의 상해</td>
+                            <td rowspan="2">매우 힘듦</td>
+                            <td>85db ≤ 소음＜ 90db</td>
+                        </tr>
+                        <tr>
+                            <!-- <td rowspan="2">4(중대재해)</td> -->
+                            <td>물적: 손실금액 1억 이상</td>
+                            <!-- <td rowspan="2">매우 힘듦</td> -->
+                            <td>분진 ≤ 0.01mg/㎥</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">3(경미한 휴업)</td>
+                            <td>인적: 1개월 이상 휴업재해</td>
+                            <td rowspan="2">힘듦</td>
+                            <td>80db ≤ 소음＜ 85db</td>
+                        </tr>
+                        <tr>
+                            <!-- <td rowspan="2">4(중대재해)</td> -->
+                            <td>물적: 손실금액 5천 이상 1억 미만</td>
+                            <!-- <td rowspan="2">매우 힘듦</td> -->
+                            <td>  0.01＜ 분진 ≤ 0.1 (mg/㎥)</td>
+                        </tr>    
+                        <tr>
+                            <td rowspan="2">2(경미한 불휴)</td>
+                            <td>인적: 3일 이상 1개월 미만 휴업</td>
+                            <td rowspan="2">약간 힘듦</td>
+                            <td>80db ≤ 소음＜ 85db</td>
+                        </tr>
+                        <tr>
+                            <!-- <td rowspan="2">4(중대재해)</td> -->
+                            <td>물적: 손실금액 1천 이상 5천 이하</td>
+                            <!-- <td rowspan="2">매우 힘듦</td> -->
+                            <td> 0.1＜ 분진 ≤ 1 (mg/㎥)</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">1(영향없음)</td>
+                            <td>인적: 미휴업 4일 이하 및 무상해</td>
+                            <td rowspan="2">쉬움</td>
+                            <td>소음＜ 80db</td>
+                        </tr>
+                        <tr>
+                            <!-- <td rowspan="2">4(중대재해)</td> -->
+                            <td>물적: 손실금액 1천만원 이하</td>
+                            <!-- <td rowspan="2">매우 힘듦</td> -->
+                            <td>1＜ 분진 ≤ 10 (mg/㎥)</td>
+                        </tr>                                     
+                </table>
+                (3) 위험등급 대조표
+                <table class="center">
+                    <thead>
+                        <tr>
+                            <th> <div class="slash"> 강도 <span>빈도</span></div></th>                            
+                            <th>1(거의없음)</th>                            
+                            <th>2(낮음)</th>                            
+                            <th>3(있음)</th>                            
+                            <th>4(높음)</th>                            
+                            <th>5(빈번함)</th>                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1(영향없음)</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>2(경미한 불휴)</td>
+                            <td>2</td>
+                            <td>4</td>
+                            <td>6</td>
+                            <td>8</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>3(경미한 휴업)</td>
+                            <td>3</td>
+                            <td>6</td>
+                            <td>9</td>
+                            <td>12</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>4(중대재해)</td>
+                            <td>4</td>
+                            <td>8</td>
+                            <td>12</td>
+                            <td>16</td>
+                            <td>20</td>
+                        </tr>
+                    </tbody>
+                </table>
+                (4)위험등급 분류
+                <table class="center">
+                    <thead>
+                        <tr>
+                            <th colspan="2">위험성 분류</th>
+                            <th>관리기준</th>
+                            <th>비고</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1∼3점<br>(1등급)</td>
+                            <td>무시할 수 있는<br>위험성</td>
+                            <td>현재의 안전대책 유지</td>
+                            <td rowspan="3">현 작업 상태 수용함<br>(현 상태로 작업)</td>
+                        </tr>
+                        <tr>
+                            <td >4∼6점<br>(2등급)</td>
+                            <td >미미한 위험성</td>
+                            <td>안전정보 및 주기적 안전보건교육의<br>제공이 필요한 위험</td>
+                            <!-- <td></td> -->
+                        </tr>
+                        <tr>
+                            <td>8점<br>(3등급)</td>
+                            <td>경미한 위험성</td>
+                            <td>유해위험 표지부착 작업절차서 표기 <br>등 관리적 대책이 필요한 위험</td>
+                            <!-- <td></td> -->
+                        </tr>
+                        <tr>
+                            <td>9∼12점<br>(4등급)</td>
+                            <td>상당히 위험</td>
+                            <td> 정비·보수기간 전에 안전보건 대책을 <br>수립하고 개선해야 하는 위험</td>
+                            <td>현 작업 상태 수용하나 <br>빠른 시일내에 개선<br>(년간 개선계획수립 후 작업)</td>
+                        </tr>
+                        <tr>
+                            <td>15점<br>(5등급)</td>
+                            <td>중대한 위험</td>
+                            <td>긴급 임시안전보건대책을 세운 후<br>작업실시하고 정비·보수기간 전에<br>안전보건 대책을 수립하고 개선해야<br>할 위험</td>
+                            <td rowspan="2">위험작업 불허<br>(즉시 작업 중지)</td>
+                        </tr>
+                        <tr>
+                            <td>16~20점<br>(6등급)</td>
+                            <td>허용불가 위험</td>
+                            <td> 즉시 작업중지(작업을 지속하려면<br>할 위험</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </li>
+            <li>
+                <p>5.2 조직상황과 이해관계자의 RISK 평가</p>
+                <div>
+                    1) 발생빈도(가능성)
+                </div>
+                <table class="center">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>기회</th>
+                            <th>확률</th>
+                            <th>빈도</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td>예외적인 상황에서 발생할 수 있음</td>
+                            <td>＜ 5％</td>
+                            <td>30년에 한두번 발생하거나<br>발생가능성이 있음</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>여러 요소의 비정상적인 상황이 중복되는<br>상황에서 발생 할 수 있음</td>
+                            <td>5％≤<br>p<br>＜35％</td>
+                            <td>회사 또는 동종업계에서<br>30년에 1∼2번 발생함</td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td>일부 비정상적인 상황에서 발생 할 <br>가능성이 있음</td>
+                            <td>35％≤ <br> p <br> ＜ 65％</td>
+                            <td>회사 또는 동종업계에서 <br> 지난 10년동안 한번 이상 발생하거나, <br>향후 10년이내에 발생 할 <br>가능성이 있음</td>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <td>정상적인 경영활동에서 발생할 것으로<br>추측됨</td>
+                            <td>65％≤ <br> p <br> ＜ 95％</td>
+                            <td>회사 또는 동종업계에서<br>지난 10년동안 2∼3번 이상 발생하거나,<br>향후 10년이내에 발생 할<br>가능성이 있음</td>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <td>정상적인 경영활동에서 발생할 것으로 <br>추측됨</td>
+                            <td>≤ 95％</td>
+                            <td>회사 또는 동종업계에서<br>지난 10년동안 한번 이상발생하거나,<br>향후 거의 확실히 발생 할<br>가능성이 있음</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <div>
+                    2) 발생강도(중대성)
+                </div>
+                <table class="center">
+                    <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>1점</th>
+                            <th>2점</th>
+                            <th>3점</th>
+                            <th>4점</th>
+                            <th>5점</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>정보</th>
+                            <td>일반대중의<br>특이한 관심이<br>없는 정보</td>
+                            <td>조직 또는 조직과<br>관련된 인원이<br>관심을 갖는 정보</td>
+                            <td>조직의 운영에<br>민감한 정보</td>
+                            <td>조직의 이해관계자에게<br>민감한 정보</td>
+                            <td>지속적으로<br>중요한 영향을<br>미치는 정보</td>
+                        </tr>
+                        <tr>
+                            <th>재산<br>피해</th>
+                            <td>자산의 경미한<br>손상 또는 파손</td>
+                            <td>경미한 손상 또는<br>자산의＜1％ 손실</td>
+                            <td>손상 또는 전체<br>자산의＜10％ 손실</td>
+                            <td>광범위한 손상<br>또는 전체자산의 <br> < 30％ 손실</td>
+                            <td> 전체자산의<br>＞31％ 손실</td>
+                        </tr>
+                        <tr>
+                            <th >기업의<br>이미지</th>
+                            <td>
+                                -지역적 언급 <br>
+                                -빨리 잊어버림<br>
+                                -운영상의 영향 받지 않음<br>
+                                -자체적 개선 요구
+                            </td>
+                            <td>
+                                -경영층 조사필요<br>
+                                -단기간 지역매체 관심<br>
+                                -몇가지 지역수준 행동유발
+                            </td>
+                            <td>
+                                -국가의 지속적 관심<br>
+                                -외부기관의 검증<br>
+                                -분기정도 브랜드 영향
+                            </td>
+                            <td>
+                                -1년정도 브랜드에 영향<br>
+                                -주요공장 심각한 제한
+                            </td>
+                            <td> 
+                                -국제적인 관심<br>
+                                -정부의 지속적 규제확대<br>
+                                -브랜드 및 조직 능력 심각 영향
+                            </td>
+                        </tr>
+                        <tr>
+                            <th >기회<br>손실</th>
+                            <td>
+                                -사소한 영향<br>
+                                -비핵심 공정의 최소한의 영향<br>
+                                -영향은 일상적인 업무로 처리가능
+                            </td>
+                            <td>
+                                -조직 기능 일부에 영향 미침 <br>
+                                -시스템 품질향상 측면에서 처리할 수 있음                                 
+                            </td>
+                            <td>
+                                -목표 미달성과 같은 성과감소의 형태로 조직에 영향을 줌<br>
+                                -조직 존재 심각 영향 초래
+                            </td>
+                            <td>
+                                -조직의 핵심활동 위측 초래(서비스 지연, 매출손실,  고객불만 등)
+                            </td>
+                            <td> 
+                                -프로젝트, 활동, 조직의 핵심활동  수행이 불가는 함
+                            </td>
+                        </tr>                        
+                    </tbody>
+                </table>
+            </li>
+            <li>
+                <p>3)위험등급 대조표</p>                
+                <table class="center last">
+                    <thead>
+                        <tr>
+                            <th rowspan="2" colspan="2">구분</th>
+                            <th colspan="5">중대성</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th rowspan="5">가능성</th>
+                            <th>1</th>
+                            <td class="blue">1</td>
+                            <td class="blue">2</td>
+                            <td class="blue">3</td>
+                            <td class="blue">4</td>
+                            <td class="blue">5</td>
+                        </tr>
+                        <tr>
+                            <!-- <td rowspan="5">가능성</td> -->
+                            <th>2</th>
+                            <td class="blue">2</td>
+                            <td class="orange">4</td>
+                            <td class="orange">6</td>
+                            <td class="orange">8</td>
+                            <td class="orange">10</td>
+                        </tr>
+                        <tr>
+                            <!-- <td rowspan="5">가능성</td> -->
+                            <th>3</th>
+                            <td class="blue">3</td>
+                            <td class="orange">6</td>
+                            <td class="orange">9</td>
+                            <td class="orange">12</td>
+                            <td class="red">15</td>
+                        </tr>
+                        <tr>
+                            <!-- <td rowspan="5">가능성</td> -->
+                            <th>4</th>
+                            <td class="blue">4</td>
+                            <td class="orange">8</td>
+                            <td class="orange">12</td>
+                            <td class="red">16</td>
+                            <td class="red">20</td>
+                        </tr>
+                        <tr>
+                            <!-- <td rowspan="5">가능성</td> -->
+                            <th>5</th>
+                            <td class="blue">5</td>
+                            <td class="orange">10</td>
+                            <td class="red">15</td>
+                            <td class="red">20</td>
+                            <td class="red">25</td>
+                        </tr>                        
+                    </tbody>
+                </table>
+                <table class="center ">
+                    <tr>
+                        <th>등급구분</th>
+                        <td class="blue">1  ＜ L ≤  5</td>
+                        <td class="orange">5  ＜ M ≤  15</td>
+                        <td class="red">15  ＜ H ≤  25</td>
+                    </tr>
+                </table>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

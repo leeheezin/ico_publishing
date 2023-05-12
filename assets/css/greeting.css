@@ -51,7 +51,6 @@ main {}
     line-height: 3rem;
     color: var(--point);
 }
-.pageCont img {width: 100%;}
 .pageCont h3 {
     font-weight: 700;
     font-size: 2rem;

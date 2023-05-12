@@ -20,7 +20,32 @@ $(document).ready(function(){
         });
     });
   });
+
+//   formail
+$('.agree_open').click(function(){
+    $('.agree').css('display','block');
+});
+$('.agree_close').click(function(){
+    $('.agree').css('display','none');
+});
+
+
+
+$('.formmail-form .form-group  .form-control').focus(function(){
+    $(this).next().addClass('on');
+});
+$('.formmail-form .form-group  .form-control').focusout(function(){
+    inputVal = $(this).val();
+    if(!inputVal) { 
+        $(this).next().removeClass('on');
+    }
+});
   
+function sendEmail() {
+    // 이메일 전송 로직 구현
+    alert('이메일이 전송되었습니다.');
+  }
+
 
 
 
